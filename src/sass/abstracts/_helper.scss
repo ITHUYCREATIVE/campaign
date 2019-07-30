@@ -1,0 +1,93 @@
+$spaceamounts: (0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 100, 150, 200); // Adjust this to include the pixel amounts you need.
+$sides: (top, bottom, left, right); // Leave this variable alone
+
+@each $space in $spaceamounts {
+  @each $side in $sides {
+    .m-#{str-slice($side, 0, 1)}-#{$space} {
+      margin-#{$side}: #{$space}px !important;
+    }
+
+    .p-#{str-slice($side, 0, 1)}-#{$space} {
+      padding-#{$side}: #{$space}px !important;
+    }
+  }
+}
+
+.center,
+.center-column,
+.top,
+.right,
+.bottom,
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-column {
+  flex-direction: column;
+}
+
+.top {
+  align-items: flex-start;
+}
+
+.right {
+  justify-content: flex-end;
+}
+
+.bottom {
+  align-items: flex-end;
+}
+
+.left {
+  justify-content: flex-start;
+}
+
+.single-spaced,
+.single-spaced * {
+  line-height: 1;
+}
+
+
+@mixin centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.parent {
+  position: relative;
+}
+
+.child {
+  @include centerer;
+}
+
+.is-vcenter-flex {
+  align-items: center;
+}
+
+
+// $percent: (5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 100); // Adjust this to include the pixel amounts you need.
+// $sides: (ptop, pbottom, pleft, pright); // Leave this variable alone
+
+@each $space in $spaceamounts {
+  @each $side in $sides {
+    .#{str-slice($side, 0, 1)}-#{$space} {
+      position: absolute;
+      #{$side}: #{$space}% !important;
+    }
+
+    .#{str-slice($side, 0, 1)}-#{$space}px {
+      position: absolute;
+      #{$side}: #{$space}px !important;
+    }
+
+    .minus-#{str-slice($side, 0, 1)}-#{$space}px {
+      position: absolute;
+      #{$side}: -#{$space}px !important;
+    }
+  }
+}

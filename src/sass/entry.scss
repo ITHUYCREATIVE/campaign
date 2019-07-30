@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+/* Init && Reset */
+@import "../../node_modules/normalize.css/normalize.css";
+
+/* Vendor */
+//Import all vendor like bulma? we have in node-module 
+@import "vendors/__vendor-dir";
+
+/* Abstracts */
+// Font, Mixin, Variables
+@import "abstracts/__abstracts-dir";
+
+/* Base Styles */
+// Custom Reset/ Normalize, Typography Rules
+@import "base/__base-dir";
+
+/* Components */
+// Button, Input, Form, Modal Styles
+@import "components/__components-dir";
+
+/* Layout */
+// Footer, Main Navigation, Sidebar, Footer Styles
+@import "layouts/__layouts-dir";
+
+/* Pages */
+// Indivisual Page
+@import "pages/__pages-dir";

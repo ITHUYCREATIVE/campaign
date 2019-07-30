@@ -1,0 +1,33 @@
+html,
+body {
+  font-family: $base__font--jp;
+  font-weight: normal;
+  color: $base__text--color;
+  line-height: $base__line--height;
+  font-size: $base__font--size;
+  background-color: $base__background--color;
+}
+
+// Header Styles
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  margin: 0;
+  line-height: $base__line--height;
+
+  a {
+    font-weight: inherit;
+  }
+}
+
+// Wrapper
+#wrapper {
+  section {
+    max-width: $base__section--width;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,64 @@
+/* Color */
+$white: #FFF;
+
+$main: #F9F9F9;
+$accent: #0C0095;
+$action: #FF6E50;
+$grey: #434F5B;
+$grey-less: #D9D9D9;
+$orange: $action;
+$blue-ish: #F0F5FB;
+$grey-base: #B5BEC8;
+$yellow: #F3A52F;
+$blue: #3B4DBE;
+$pink: #F13E59;
+$item: #B5BEC8;
+$brown-ish: #D69028;
+
+$base__color--primary: $yellow;
+$base__color--secondary: $blue;
+$base__text--color: $grey;
+$base__item--color: $item;
+$base__background--color: $white;
+$base__wrapper--color: $main;
+
+$base__heading-background--color: $blue-ish;
+$base__border: 1px solid $base__item--color;
+$base__border--black: 1px solid #000;
+$base__border--sm: 1.5px solid $base__item--color;
+$base__border--md: 2px solid $base__item--color;
+$base__border--lg: 2px solid $base__item--color;
+$base__border--color: #B5BEC8;
+
+$border--dashed-sm: 1.5px dashed #B5BEC8;
+$base__box-shadow: 0px 4px 8px rgba(0, 43, 127, 0.24);
+
+$base__border-bottom--primary: 5px solid #C4C4C4;
+$base__border-bottom--secondary: 5px solid #363F49;
+
+/* Size */
+$base__border--radius-primary: 20px;
+$base__border--radius-secondary: 10px;
+$base__border--radius-small: 5px;
+$base__boder--radius-sm: 5px;
+$base__line--height: 24px;
+$base__line--height--sm: 29px;
+$base__line--height--md: 35px;
+$base__font--size: 16px;
+$base__font--size-sm: 14px;
+$base__h1--size: 20px;
+$base__h2--size: 18px;
+$base__letter--space: 2px;
+$base__title1--size: 40px;
+$base__title2--size: 30px;
+$base__title3--size: 24px;
+$base__title4--size: 18px;
+
+$base__font--size-sp: 16px;
+$base__title1--size-sp: 24px;
+$base__title2--size-sp: 24px;
+$base__title3--size-sp: 20px;
+
+
+$base__wrapper--width: 1380px;
+$base__section--width: 1000px;
